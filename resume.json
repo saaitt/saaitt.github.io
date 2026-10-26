@@ -1,0 +1,102 @@
+{
+  "name": "Saeed Firouzi",
+  "handle": "saeed",
+  "title": "Software Engineer",
+  "company": "Snappfood",
+  "location": "Tehran, Iran",
+  "summary": [
+    "Software engineer with 9+ years of experience building scalable, high-performance applications.",
+    "Passionate about big data, AI and high-load systems, with deep expertise in software architecture, database design and query optimization.",
+    "A proactive problem solver who learns fast and delivers projects end to end in agile, product-focused teams."
+  ],
+  "contact": {
+    "email": "saeid.firouzi@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/saeed-firoozi",
+    "github": "https://github.com/saaitt"
+  },
+  "skills": {
+    "Core": ["Laravel", "Elasticsearch", "Large Language Models (LLM)"],
+    "Architecture": ["Event-driven architecture", "Async processing", "Distributed locks", "High-load / low-latency services"],
+    "Data": ["Database design", "Query optimization", "Query caching"],
+    "DevOps": ["Docker", "CI/CD", "Nginx", "Rate limiting"]
+  },
+  "languages": [
+    { "name": "Farsi", "level": "Native or bilingual" },
+    { "name": "English", "level": "Full professional" }
+  ],
+  "experience": [
+    {
+      "company": "Snappfood",
+      "role": "Software Engineer",
+      "period": "Jan 2026 - Present",
+      "location": "Tehran",
+      "bullets": ["Dispatch & Delivery team"]
+    },
+    {
+      "company": "Digikala",
+      "role": "Senior Software Engineer",
+      "period": "Aug 2024 - Jan 2026",
+      "location": "Tehran",
+      "bullets": [
+        "Designed and built Digikala B2B's automated pricing platform enabling real-time price updates across thousands of SKUs.",
+        "Partnered with data science and BI teams to develop dynamic pricing algorithms and optimize models for profitability and competitiveness.",
+        "Reduced price list generation time from 2 hours to 1 second and cut inventory sync delay from 1 hour to under 3 minutes.",
+        "Created LLM-powered product matching to align Digikala's catalog with competitor listings despite inconsistent naming.",
+        "Improved reliability and data consistency through event-driven architecture, async processing and distributed locks."
+      ]
+    },
+    {
+      "company": "Mazdax Exchange",
+      "role": "Senior Software Engineer",
+      "period": "Jun 2022 - Aug 2024",
+      "location": "Tehran",
+      "bullets": [
+        "Designed and implemented an order matching system handling 70K+ requests/sec with high availability.",
+        "Contributed to highly concurrent services with low latency and high fault tolerance.",
+        "Removed redundant code that was increasing response times.",
+        "Optimized queries on large-scale databases, found and resolved bottlenecks."
+      ]
+    },
+    {
+      "company": "Chamedoon",
+      "role": "Software Engineer",
+      "period": "May 2021 - May 2022",
+      "location": "Tehran",
+      "bullets": [
+        "Built a multi-provider hotel reservation service in under 6 months, expanding the startup's market reach by 35%.",
+        "Built a channel manager for offline hotels, closing the delay between hotel owners and the support system.",
+        "Created a Docker- and git-tag-based CI/CD pipeline that builds images off production servers and pushes them to a private registry, enabling easy rollbacks."
+      ]
+    },
+    {
+      "company": "Address",
+      "role": "Software Engineer",
+      "period": "Feb 2020 - Apr 2021",
+      "location": "Tehran",
+      "bullets": [
+        "Added query caching that cut unnecessary database queries by a factor of 1000.",
+        "Built a fraud detection system that spots foul play from competitors, reducing operational costs by 60%.",
+        "Hardened the platform against DDoS with per-user transaction limits (Nginx and middleware rate limiters), cutting server load by a factor of 100."
+      ]
+    },
+    {
+      "company": "Dead Cat Game Studio",
+      "role": "Junior Software Engineer",
+      "period": "Jan 2017 - Jan 2020",
+      "location": "Tehran",
+      "bullets": [
+        "Developed the analytics and matchmaking services.",
+        "Designed a user state manager system, tested under high load.",
+        "Contributed to the internal user chat system.",
+        "Handled on-launch disaster control."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Islamic Azad University",
+      "degree": "B.S. Computer Science",
+      "period": "2014 - 2019"
+    }
+  ]
+}

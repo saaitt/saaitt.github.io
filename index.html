@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saeed Firouzi | Software Engineer</title>
+  <meta name="description" content="Saeed Firouzi, software engineer with 9+ years building high-load systems. Interactive terminal resume.">
+  <meta property="og:title" content="Saeed Firouzi | Software Engineer">
+  <meta property="og:description" content="Interactive terminal resume. Type 'help' to get started.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="term" aria-label="Terminal resume">
+    <div id="screen" role="log" aria-live="polite"></div>
+    <form id="prompt" autocomplete="off">
+      <label for="cmd" id="ps1"></label>
+      <input id="cmd" type="text" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" aria-label="Command">
+    </form>
+    <nav id="chips" aria-label="Quick commands"></nav>
+  </main>
+
+  <noscript>
+    <section class="fallback">
+      <h1>Saeed Firouzi</h1>
+      <p>Software Engineer at Snappfood, Tehran. 9+ years building scalable, high-load systems (Laravel, Elasticsearch, LLMs).</p>
+      <p>Previously Digikala, Mazdax Exchange, Chamedoon, Address and Dead Cat Game Studio.</p>
+      <p><a href="https://www.linkedin.com/in/saeed-firoozi">LinkedIn</a> · <a href="https://github.com/saaitt">GitHub</a> · <a href="mailto:saeid.firouzi@gmail.com">Email</a></p>
+      <p>Enable JavaScript for the interactive terminal.</p>
+    </section>
+  </noscript>
+
+  <script src="terminal.js"></script>
+</body>
+</html>

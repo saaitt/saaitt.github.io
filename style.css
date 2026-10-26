@@ -1,0 +1,74 @@
+:root {
+  --bg: #0b0f0c;
+  --fg: #c9f7d4;
+  --dim: #6f8f78;
+  --accent: #39ff7a;
+  --warn: #ffd166;
+  --font: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+:root[data-theme="amber"] { --bg: #120d04; --fg: #ffe2a8; --dim: #9a7b43; --accent: #ffb000; --warn: #ff7a59; }
+:root[data-theme="ice"]   { --bg: #08101a; --fg: #d3e9ff; --dim: #6d87a3; --accent: #5cc8ff; --warn: #ffd166; }
+:root[data-theme="paper"] { --bg: #f6f3ea; --fg: #23211c; --dim: #7d776a; --accent: #0b6b3a; --warn: #b3541e; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); }
+body { color: var(--fg); font: 15px/1.5 var(--font); }
+
+#term {
+  max-width: 920px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 20px 16px 32px;
+}
+#screen { white-space: pre-wrap; word-break: break-word; }
+#screen .line { min-height: 1.5em; }
+.dim { color: var(--dim); }
+.accent { color: var(--accent); }
+.warn { color: var(--warn); }
+.bold { font-weight: 700; }
+a, .cmd-link { color: var(--accent); text-decoration: underline; cursor: pointer; }
+a:hover, .cmd-link:hover { background: var(--accent); color: var(--bg); }
+
+/* Block-letter headline: scales so the widest word (7 letters, 41 cols) fits the viewport. */
+.banner {
+  margin: 8px 0 4px;
+  line-height: 1.15;
+  font-size: clamp(8px, calc((100vw - 32px) / 29), 18px);
+  white-space: pre;
+  overflow: hidden;
+}
+.headline-title { font-size: clamp(14px, 4.2vw, 22px); letter-spacing: 0.12em; color: var(--fg); }
+
+#prompt { display: flex; align-items: center; gap: 0.6ch; margin-top: 2px; }
+#ps1 { color: var(--accent); white-space: pre; }
+#cmd {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: var(--fg);
+  font: inherit;
+  caret-color: var(--accent);
+  caret-shape: block;
+}
+
+#chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+#chips button {
+  font: inherit;
+  font-size: 13px;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--dim);
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+#chips button:hover, #chips button:focus-visible { border-color: var(--accent); background: var(--accent); color: var(--bg); outline: 0; }
+
+.fallback { max-width: 640px; margin: 0 auto; padding: 16px; color: var(--fg); }
+
+@media (max-width: 520px) {
+  body { font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
